@@ -1,0 +1,95 @@
+
+
+  --------------------   PRACTICA Nº 3 ------------------------------------------
+  
+   1. Escriba el programa que muestra por la consola la frase "Hola Mundo". ¿Que significado tiene
+   la salida? (puts ’Hola Mundo’)
+ 
+    Muestra por salida-estándar el mensaje 'Hola Mundo' ya que puts sirve para mostrar por pantalla.
+    
+   2. ¿Qué diferencia hay entre "\t\n" y ’\t\n’?
+  
+   "\t\n": Interpreta el tabulador y el salto de linea ya que son comillas dobles
+   '\t\n': Interpreta la cadena literalmente. Muestra: \t\n ya que son comillas simples 
+   
+   3. ¿Cómo funciona %q? ¿Qué es %q{hello world\n}? ¿Qué es %q{’a’ ’b’ ’c’}?
+   
+   Duplica las comillas y las barras inclinadas.
+   
+   4. ¿Cómo funciona %Q? ¿Qué es %Q{hello world\n}? ¿Qué es %Q{"a" "b" "c"}?
+   
+   Duplica las comillas y delimita las cadenas por las barras inclinadas.
+   
+   5. ¿Qué queda en c?
+
+   6. ¿Qué queda en c?
+
+   irb(main):001:0> a = 4
+   => 4
+   irb(main):002:0> b =2
+   => 2
+   irb(main):003:0> c = <<HERE
+   irb(main):004:0" --#{a}--
+   irb(main):005:0" --#{b}--
+   irb(main):006:0" HERE
+   
+   En c queda almacenado el contenido de la variable a y b , es decir 4 y 2.
+   
+   
+   7. ¿Qué queda en c?
+   
+    irb(main):001:0> a = 4
+    => 4
+    irb(main):002:0> b = 2
+    => 2
+    irb(main):008:0>  c = <<’HERE’
+    irb(main):009:0’  --#{a}--
+    irb(main):010:0’  --#{b}-
+    irb(main):011:0’ HERE
+    
+    En c almacena la cadena de forma literal,ya que se encuentra en comillas simples es decir te muestra --#{a}-- y --#{b}-
+    
+    
+    8. s = "hello". ¿Cuál es el valor de las siguientes expresiones?
+    
+    s[0,2] -> "he"
+    s[-1,1] -> "o" 
+    s[0,10] -> "hello"
+    
+    9. ¿Qué queda en e?
+    
+    >> e = ’.’*3 
+    -> . . .
+    
+    Repite el punto 3 veces ya que * repite tantas veces como se indique el simbolo '.'
+    
+    10. ¿Cuál es el resultado?
+    
+     >> a = 1
+     => 1
+     >> "#{a=a+1} "*3
+     -> 2 2 2
+     Repite el 2, 3 veces 
+
+
+    
+
+
+    
+    
+   
+  
+    
+
+
+
+
+
+
+
+
+
+
+
+   
+
