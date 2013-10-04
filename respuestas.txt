@@ -283,20 +283,12 @@ Lenguajes y Paradigmas de Programación
     => {:a=>1}
 
 
-    52.  
-
-    Hace la operación que nosotros queramos con esos valores, como por ejemplo la siguiente suma:
-
-    >> def test
-    >> yield(4,5)
-    >> end
-    => nil
-    >> test {|a,b| puts "Resultado de la suma: #{a+b}"}
-    Resultado de la suma: 9
-    => nil
-
+    52.  Un método puede usar el bloque mediante la palabra yield
+         Estamos proporcionando parametros a la llamada yield , los cuales seran pasados al bloque.
     
-    53. counts = Hash.new(0) crea un Hash de 0 elementos y counts={} crea un array de 0 elementos.
+    
+    53. counts = Hash.new(0) crea un Hash de 0 elementos
+	counts={} crea un array de 0 elementos.
 
 
     54.  => ["hello", "world", "hello", "LPP"]
@@ -304,14 +296,16 @@ Lenguajes y Paradigmas de Programación
 
     55.
 
-    >>c = { :a => 3, :b => 2, :c => 1 }
-    {:a=>3, :b=>2, :c=>1}
-    >>c.keys.sort.each { |k| puts c[k] }
+    c = { :a => 3, :b => 2, :c => 1 }
+    => {:a=>3, :b=>2, :c=>1}
+    c.keys.sort.each { |k| puts c[k] }
     3
     2
     1
     => [:a, :b, :c]
 
+   Primero creamos un hash literal , con las parejas clave-valor indicadas y a continuacion se ordenan los valores
+   mediante el metodo sort. 
 
 
 
